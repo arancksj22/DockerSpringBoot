@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
+    CalculatorService calcService;
+
+    Controller(CalculatorService calcService;){
+        this.calcService = calcService;
+    }
+
     @GetMapping("/{num1}+{num2}")
     public int add(@PathVariable int num1, @PathVariable int num2) {
         return calcService.add(num1, num2);
