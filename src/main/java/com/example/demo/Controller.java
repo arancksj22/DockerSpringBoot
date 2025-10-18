@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    @GetMapping(/{num1}/{num2})
-    public String add(@PathVariable int num1, @PathVariable int num2) {
-        int sum = num1 + num2;
-        return "The sum of " + num1 + " and " + num2 + " is " + sum;
+    @GetMapping("/{num1}+{num2}")
+    public int add(@PathVariable int num1, @PathVariable int num2) {
+        return calcService.add(num1, num2);
     }
 
 }
