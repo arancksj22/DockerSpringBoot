@@ -9,7 +9,7 @@ public class Controller {
 
     CalculatorService calcService;
 
-    Controller(CalculatorService calcService;){
+    Controller(CalculatorService calcService){
         this.calcService = calcService;
     }
 
