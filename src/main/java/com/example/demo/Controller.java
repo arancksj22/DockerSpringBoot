@@ -18,4 +18,10 @@ public class Controller {
         return calcService.add(num1, num2);
     }
 
+    @GetMapping("/")
+    public String greet(){
+        return "Hello your backend is working";
+    }
+
+
 }
