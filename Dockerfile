@@ -1,0 +1,2 @@
+FROM openjdk:21-jdk-slim
+ADD target/dockerSpringbootPractice.jar dockerSpringbootPractice.jar
